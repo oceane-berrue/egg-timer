@@ -1,0 +1,239 @@
+/* @import "tailwindcss";
+
+@theme {
+  --color-darkyellow: #F0BD21;
+} */
+
+:root {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+
+  width: 310px;
+  height: 400px;
+  margin: 0 auto;
+  border: 3px solid var(--darkyellow);
+  background-color: var(--lightyellow);
+
+  --brown: #55321C;
+  --darkyellow: #F0BD21;
+  --lightyellow: #FFE671;
+  --darkorange: #DB8464;
+  --lightorange: #FFD9B0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("../assets/cloudy_yellow_BG.png");
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 340px;
+  margin: 2px auto 0px auto;
+  border: 3px solid var(--darkyellow)
+}
+
+h1 {
+  font-size: xx-large;
+  line-height: 1;
+  color: var(--brown);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: x-large;
+  color: var(--darkorange);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: large;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--brown);
+  margin: 0px 0px 0px 0px;
+}
+
+header {
+  height: 40px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  -webkit-app-region: drag;
+}
+
+header button{
+  -webkit-app-region: no-drag;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 2px 0px 2px;
+}
+.icon-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+.menu-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 2px 0px 2px;
+}
+
+.menu-btn img {
+  width: 80px;
+  height: 80px;
+}
+
+.menu-choice {
+  justify-content: center;
+}
+
+button {
+  color: var(--darkorange);
+  background-color: var(--lightorange);
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: x-large;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  border: 3px solid var(--darkorange);
+  padding: 0px 20px 0px 20px;
+}
+
+.startpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 70%;
+}
+
+.startpage button:hover {
+  transform: scale(1.1)
+}
+
+.startpage button {
+  transition: transform 0.2s ease;
+  cursor: pointer
+}
+
+.sound-btn {
+  border: none;
+  background: none;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.sound-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.menupage {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.menu-title {
+  font-weight: 600;
+}
+
+.menu-full {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: start;
+}
+
+.menupage button {
+  transition: transform 0.2s ease;
+  cursor: pointer
+}
+
+.menupage button:hover {
+  transform: scale(1.1)
+}
+
+.timerpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: px;
+  margin-top: 15px;
+}
+
+.timer {
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--brown);
+}
+
+.timerpage img {
+  width: 180px;
+  height: 180px;
+}
+
+.timerpage button {
+  transition: transform 0.2s ease;
+  cursor: pointer
+}
+
+.timerpage button:hover {
+  transform: scale(1.1)
+}
+
+.endpage img {
+  width: 160px;
+  height: 160px;
+}
+
+.endpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+.endpage p {
+  font-size: x-large;
+}
+
+.endpage-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.endpage button {
+  transition: transform 0.2s ease;
+  cursor: pointer
+}
+
+.endpage button:hover {
+  transform: scale(1.05)
+}
