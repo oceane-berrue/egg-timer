@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const indexHtml = path.resolve(__dirname, "../dist/index.html");
-console.log("Index HTML path:", indexHtml)
+const isDev = !app.isPackaged
 
 let win
 
@@ -25,8 +25,11 @@ function createWindow() {
     }
   })
 
-  win.loadFile(indexHtml)
-
+  if (isDev) {
+    win.loadURL("http://localhost:5173")
+  } else {
+    win.loadFile(indexHtml)
+  }
 }
 
 app.whenReady().then(() => {
