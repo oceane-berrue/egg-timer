@@ -11,7 +11,6 @@ A small desktop egg timer application built with **React** and **Electron**
 - TypeScript
 - Electron
 - Vite
-- Tailwind CSS
 
 ## Credits
 Design from **@nashallery**.  
